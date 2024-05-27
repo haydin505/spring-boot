@@ -23,6 +23,7 @@ package org.springframework.boot.testsupport.system;
  * @author Madhura Bhave
  * @author Phillip Webb
  * @author Andy Wilkinson
+ * @author Huseyin Aydin
  */
 public interface CapturedOutput extends CharSequence {
 
@@ -59,5 +60,10 @@ public interface CapturedOutput extends CharSequence {
 	 * @return {@link System#err System.err} captured output
 	 */
 	String getErr();
+
+	/**
+	 * Clears the captured output.
+	 */
+	void reset();
 
 }

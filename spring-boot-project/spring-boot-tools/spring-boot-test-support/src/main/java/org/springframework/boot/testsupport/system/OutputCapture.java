@@ -106,7 +106,8 @@ class OutputCapture implements CapturedOutput {
 	/**
 	 * Resets the current capture session, clearing its captured output.
 	 */
-	void reset() {
+	@Override
+	public void reset() {
 		this.systemCaptures.peek().reset();
 	}
 
